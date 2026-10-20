@@ -1,6 +1,6 @@
 # Copilot instructions — ragmha-skills
 
-A Copilot CLI plugin marketplace that bundles ~24 reusable agent **skills** (`SKILL.md` instruction files an agent loads at runtime). This repo is almost entirely Markdown — there is no build, no test runner, and no lint pipeline. Changes are surgical edits to skill files plus README/plugin metadata.
+A Copilot CLI plugin marketplace that bundles 29 reusable agent **skills** (`SKILL.md` instruction files an agent loads at runtime). This repo is almost entirely Markdown — there is no build, no test runner, and no lint pipeline. Changes are surgical edits to skill files plus README/plugin metadata.
 
 ## Repository layout
 
@@ -52,7 +52,7 @@ From `CONTRIBUTING.md` and observable patterns:
      ```
      - [`skill-name`](resources/skill-name/SKILL.md) - One-sentence description ending with a period.
      ```
-  3. If the skill count changes, update the count in `plugin.json` `description` and `.github/plugin/marketplace.json` (these have already drifted — plugin.json says 24, marketplace.json says 23; treat both as needing review).
+  3. If the skill count changes, update the count in `plugin.json` `description` and `.github/plugin/marketplace.json`, plus the `/skills list` count in `README.md` — keep all three equal to the number of `resources/*/SKILL.md` files.
   4. Sharpen the `description:` triggers — that's what makes invocation work.
 - **New category** in README needs ≥ 2 skills before it's worth creating.
 - **Don't add overlapping skills.** Extend the existing one instead.
